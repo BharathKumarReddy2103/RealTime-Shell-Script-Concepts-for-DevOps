@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]; then
+if [ "$USERID" -ne 0 ]; then
     echo "ERROR: Please run this script with root access"
     exit 1
 else
@@ -10,27 +10,17 @@ else
 fi
 
 dnf list installed mysql
-if [ $? -eq 0 ]
-then
+if [ $? -ne 0 ]; then
     echo "MYSQL is not installed... going to install it"
     dnf install mysql -y
-    if [ $? -eq 0]
-    then
+
+    if [ $? -eq 0 ]; then
         echo "Installing MYSQL is ... SUCCESS"
     else
-        echo "Installing MYSQL is ... FAILURE
+        echo "Installing MYSQL is ... FAILURE"
         exit 1
     fi
 else
-    echo "MYSQL is already installed...Nothing to do"
-    exit 1
+    echo "MYSQL is already installed... Nothing to do"
+    exit 0
 fi
-
-# dnf install mysql -y
-
-# if [ $? -eq 0 ]; then
-#     echo "Installing MYSQL is ... SUCCESS"
-# else
-#     echo "Installing MYSQL is ... FAILURE"
-#     exit 1
-# fi
