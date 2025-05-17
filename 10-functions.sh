@@ -9,6 +9,7 @@ else
     echo "You are running with root access"
 fi
 
+#
 VALIDATE() {
     if [ $1 -eq 0 ]; then
         echo "Installing $2 is ... SUCCESS"
