@@ -12,6 +12,7 @@ fi
 
 dnf list installed mysql
 
+#
 if [ $? -eq 0 ]
 then
     echo "MYSQL is not installed... going to install it"
