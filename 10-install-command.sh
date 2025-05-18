@@ -10,7 +10,7 @@ else
     echo "You are running with root access"
 fi
 
-dnf install mysqafdgh -y
+dnf install mysql -y
 
 if [ $? -eq 0 ]
 then
