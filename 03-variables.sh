@@ -4,8 +4,8 @@ PERSON1=Bharath
 PERSON2=Kumar
 # Using variables to store names
 
-echo "$PERSON1:: \"Hey $PERSON2, How are you?\""
-echo "$PERSON2:: \"Hello $PERSON1, I am fine. How are you doing?\""
-echo "$PERSON1:: \"I am fine too. What's up?\""
-echo "$PERSON2:: \"Nothing, just going to Mars now. Will you come?\""
-echo "$PERSON1:: \"Sorry, you carry on! I will come once you come back.\""
+echo "$PERSON1:: "Hey $PERSON2, How are you?""
+echo "$PERSON2:: "Hello $PERSON1, I am fine. How are you doing?""
+echo "$PERSON1:: I am fine too. What's up?"
+echo "$PERSON2:: Nothing, just going to Mars now. Will you come?"
+echo "$PERSON1:: Sorry, you carry on! I will come once you come back."
