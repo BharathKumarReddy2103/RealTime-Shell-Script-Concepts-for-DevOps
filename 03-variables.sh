@@ -1,7 +1,8 @@
 #!/bin/bash
 
 PERSON1=Bharath
-PERSON2=Reddy
+PERSON2=Kumar
+# Using variables to store names
 
 echo "$PERSON1:: \"Hey $PERSON2, How are you?\""
 echo "$PERSON2:: \"Hello $PERSON1, I am fine. How are you doing?\""
