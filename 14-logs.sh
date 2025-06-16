@@ -51,12 +51,12 @@ else
     echo -e "Nothing to do python...$Y already installed $N" | tee -a $LOG_FILE
 fi
 
-# dnf list installed nginx &>>LOGS_FILE
-# if [ $? -eq 0 ]
-# then
-#     echo "nginx is not installed... going to install it" | tee -a $LOG_FILE
-#     dnf install nginx -y &>>LOGS_FILE
-#     VALIDATE $? "nginx"
-# else
-#     echo -e "Nothing to do nginx...$Y already installed $N" | tee -a $LOG_FILE
-# fi
+dnf list installed nginx &>>LOGS_FILE
+if [ $? -eq 0 ]
+then
+    echo "nginx is not installed... going to install it" | tee -a $LOG_FILE
+    dnf install nginx -y &>>LOGS_FILE
+    VALIDATE $? "nginx"
+else
+    echo -e "Nothing to do nginx...$Y already installed $N" | tee -a $LOG_FILE
+fi
