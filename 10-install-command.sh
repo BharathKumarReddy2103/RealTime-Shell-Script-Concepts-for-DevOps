@@ -10,7 +10,7 @@ else
     echo "You are running with root access"
 fi
 
-dnf list installed mysqldlkhl -y
+dnf list installed mysql -y
 
 # check already installed or not. if installed $? is 0, then
 # if not installed $? is not 0. expression is true
