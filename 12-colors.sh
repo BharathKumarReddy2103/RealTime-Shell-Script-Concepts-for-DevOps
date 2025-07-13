@@ -2,4 +2,4 @@
 
 echo -e "\e[31m Hello Colors \e[0m"
 
-echo "Hellow No Colors"
+echo "Hello No Colors"
