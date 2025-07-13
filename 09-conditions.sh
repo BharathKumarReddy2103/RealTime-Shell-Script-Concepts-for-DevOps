@@ -7,7 +7,7 @@ NUMBER=$1
 # -eq --> equal
 # -ne --> not qual
 
-if [$NUMBER -lt 10]
+if [ $NUMBER -lt 10 ]
 then 
     echo "Given number $NUMBER is less than 10"
 else
